@@ -76,7 +76,10 @@ int main(void)
         {
             search_unit(p, count);
         }
-
+	else if(menu==8)
+        {
+            search_name(p, count);
+        }
     } 
 
     return 0;
