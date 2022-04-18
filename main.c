@@ -6,7 +6,10 @@ int main(void)
     int index=0;
     int no, deletok;
     Product *p[100];
-    
+   
+    count=loadData(p);
+    index=count;
+
     while(1) // while의 종료조건을 1로 함으로써 계속 실행되도록 함(하지만 1. 종료 조건인 menu==0일때 나가도록 조정해도 좋을 듯, 2. swicth문으로 관리해도 좋을 듯)
     {
         menu=selectMenu();
