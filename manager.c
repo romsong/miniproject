@@ -168,3 +168,17 @@ void search_unit(Product *p[], int count) // 판매단위를 찾는 기능
         }
 }
 
+void search_name(Product *p[], int count) // 제품이름을 찾는 기능
+{
+    int i;
+    char name[20];
+
+    printf("검색할 이름을 입력하세요: ");
+    scanf("%s", name);
+
+    for(i=0; i<count; i++)
+    {
+        if(strstr(p[i]->name, name))
+            redaProduct(p[i]);
+    }
+}
