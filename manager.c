@@ -139,3 +139,17 @@ int loadData(Product *p[])
 
     return i;
 }
+
+void search_price(Product *p[], int count) // 가격을 찾는 기능
+{
+    int i, price;
+
+    printf("검색할 가격을 입력하세요: ");
+    scanf("%d", &price);
+
+    for(i=0; i<count; i++)
+    {
+        if(p[i]->price==price)
+            redaProduct(p[i]);
+    }
+}
