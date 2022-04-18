@@ -153,3 +153,18 @@ void search_price(Product *p[], int count) // 가격을 찾는 기능
             redaProduct(p[i]);
     }
 }
+
+void search_unit(Product *p[], int count) // 판매단위를 찾는 기능
+{
+        int i, unit;
+
+        printf("검색할 단위를 입력하세요: ");
+        scanf("%d", &unit);
+
+        for(i=0; i<count; i++)
+        {
+            if(p[i]->price==unit)
+                redaProduct(p[i]);
+        }
+}
+
