@@ -20,6 +20,8 @@ void listProduct(Product *p[], int count); // 리스트로 조회하는 기능
 int selectDataNo(Product *p[], int count); // 번호를 선택 하는 기능
 void saveData(Product *p[], int count);
 int loadData(Product *p[]);
+void search_price(Product *p[], int count);
+
 
 
 
