@@ -22,7 +22,7 @@ void saveData(Product *p[], int count);
 int loadData(Product *p[]);
 void search_price(Product *p[], int count);
 void search_unit(Product *p[], int count); // 판매단위를 찾는 기능
-
+void search_name(Product *p[], int count); // 제품이름을 찾는 기능
 
 
 
