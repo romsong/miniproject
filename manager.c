@@ -116,3 +116,26 @@ void saveData(Product *p[], int count)
     fclose(fp);
     printf("=> 저장됨! ");
 }
+
+int loadData(Product *p[])
+{
+    int count=0, i=0;
+    FILE *fp;
+
+    fp=fopen("product.txt", "rt");
+    for(i=0; i<100; i++)
+    {
+        fscanf(fp, "%s", p[i]->name);
+        if(feof(fp))
+            break;
+        fscanf(fp, "%s", p[i]->space);
+        fscanf(fp, "%s", p[i]->simple_ex);
+        fscanf(fp, "%d", p[i]->price);
+        fscanf(fp, "%d", p[i]->unit);
+        fscanf(fp, "%s", p[i]->delivery);
+    }
+    fclose(fp);
+    printf("=> 로딩 성공!\n");
+
+    return i;
+}
