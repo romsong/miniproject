@@ -21,6 +21,7 @@ int selectDataNo(Product *p[], int count); // 번호를 선택 하는 기능
 void saveData(Product *p[], int count);
 int loadData(Product *p[]);
 void search_price(Product *p[], int count);
+void search_unit(Product *p[], int count); // 판매단위를 찾는 기능
 
 
 
