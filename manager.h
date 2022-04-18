@@ -19,6 +19,7 @@ int updateProduct(Product *p[], int index); // 하나의 데이터 수정하는 
 void listProduct(Product *p[], int count); // 리스트로 조회하는 기능
 int selectDataNo(Product *p[], int count); // 번호를 선택 하는 기능
 void saveData(Product *p[], int count);
+int loadData(Product *p[]);
 
 
 
