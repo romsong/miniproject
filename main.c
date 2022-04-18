@@ -72,6 +72,11 @@ int main(void)
         {
             search_price(p, count);
         }
+	else if(menu==7)
+        {
+            search_unit(p, count);
+        }
+
     } 
 
     return 0;
