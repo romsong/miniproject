@@ -68,6 +68,10 @@ int main(void)
         {
             saveData(p, index);
         }
+	else if(menu==6)
+        {
+            search_price(p, count);
+        }
     } 
 
     return 0;
